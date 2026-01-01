@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>This is it. — Converted BBCode → HTML</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* --------- Page / Utility --------- */
+    :root{
+      --page-bg: #1f1719;        /* outer page background */
+      --card-bg: #2f2528;        /* inner card background */
+      --muted-bg: rgba(255,255,255,0.02);
+      --accent: #eec5df;         /* small accent color */
+      --text: #e9e4e7;           /* main text color */
+      --muted-text: rgba(233,228,231,0.8);
+      --max-width: 820px;
+      --radius: 6px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--page-bg);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased;
+      color:var(--text);
+      line-height:1.45;
+    }
+
+    /* center the container and give comfortable vertical padding */
+    .page {
+      min-height:100%;
+      display:flex;
+      align-items:flex-start;            /* page in image starts from top center, not vertically centered */
+      justify-content:center;
+      padding:48px 20px 80px;
+      box-sizing:border-box;
+    }
+
+    /* the notice/card wrapper */
+    .notice {
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      box-shadow:0 6px 28px rgba(0,0,0,0.45);
+      padding:44px 56px;
+      box-sizing:border-box;
+      position:relative;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    /* small "Note." label at top, with caret above like the image */
+    .notice::before{
+      content:"▾ Note.";
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      top:-20px;
+      background:transparent;
+      color:var(--accent);
+      font-weight:600;
+      font-size:13px;
+      letter-spacing:0.2px;
+    }
+
+    /* Title ("This is it.") */
+    .title {
+      display:block;
+      text-align:center;
+      font-size:40px;        /* visually large */
+      font-weight:600;
+      margin:4px 0 22px;
+      color:var(--text);
+    }
+
+    /* general content styling */
+    .content{
+      text-align:center;     /* original layout is centered paragraphs */
+      font-size:14px;
+      color:var(--muted-text);
+      max-width:740px;
+      margin:0 auto;
+    }
+
+    /* paragraphs spacing */
+    .content p {
+      margin:18px 0;
+    }
+
+    /* special emphasized / white color text (from [color=#ffffff]) */
+    .strong-white {
+      color:#ffffff;
+      display:block;
+      margin:14px 0;
+    }
+
+    /* bold text */
+    .content strong {
+      color:var(--text);
+      font-weight:700;
+      display:block;
+      margin:12px 0;
+    }
+
+    /* link style */
+    a.link {
+      color:#ffffff;
+      text-decoration:underline;
+    }
+
+    /* small centered meta / date lines */
+    .meta {
+      margin:50px 0;
+      color:var(--muted-text);
+      font-size:13px;
+    }
+
+    /* final small parenthetical line */
+    .footnote {
+      margin-top:12px;
+      font-size:13px;
+      color:var(--muted-text);
+    }
+
+    /* make text slightly more readable on narrow screens */
+    @media (max-width:520px){
+      .notice{ padding:26px 20px; }
+      .title{ font-size:30px; }
+      .content{ font-size:15px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <article class="notice" role="article" aria-label="Personal post: This is it.">
+      <!-- Big heading -->
+      <h1 class="title">This is it.</h1>
+
+      <!-- Main body (converted from BBCode). All text is intentionally centered to match the original image. -->
+      <div class="content">
+
+        <p>
+          Today, 14th of December 2025, i took a crucial choice in my life, and chose to pretty much stop playing osu after 6 and a half years of playing.
+          This game is truly amazing, it gave me moments where i was super happy, and others where i was awfully sad.
+        </p>
+
+        <p>
+          This game presented awesome people to me. Really awesome people, if you're intrigued i linked them in my bio in the bottom,
+          i even met my girlfriend here !
+        </p>
+
+        <!-- color=#ffffff -->
+        <p class="strong-white">
+          This was an awesome journey but i'll stop osu!std for pretty much forever i think, sadly, with RSI and other issues in my life,
+          this game has became a struggle to play.
+        </p>
+
+        <p>
+          I'm very happy my brother introduced this game to me in 2014, when i was only 5, because i didn't know that later on, this game would hit me so much in a good way.
+          Also, a little fun fact about me, the first map i played is
+          <a class="link" href="https://osu.ppy.sh/beatmapsets/10890" target="_blank" rel="noopener noreferrer">
+            Silent Night
+          </a>
+          ! Now i'm 16 and i wouldn't be who i am without this game.
+        </p>
+
+        <p>
+          And now, i decided that i want to try to become a good mapper, that could be useful to the community, just mapping the shit i enjoy and i just want to enjoy life, being more healthy !
+        </p>
+
+        <p>
+          It's crazy that during those 6 years of playing, i only managed to hit 45k ! But hey, i guess people aren't all progressing super fast!
+          I'm happy with my skill and what i became, and after all, i play counter strike now, not osu! But yeah, i had a lot of paths in my osu playing career, if you can call it that.
+          I tried being a medal farmer, got a lot of medals and then stopped. I wanted to be a top 50 farmer just for my ego, and got some top 50s, and got sad cause i wasn't good enough, so i quit.
+          I wanted to be a god player, but mrekk beat me to it. Being a complishonist also went through my mind, but it left as soon as i saw the amount of maps. And now, i want to become a mapper ! I hope this can work, finally.
+        </p>
+
+        <p>
+          I love this community, i love everyone that i met here, and i'm happy you guys exist.
+        </p>
+
+        <!-- [b]Thank you all.[/b] -->
+        <p><strong>Thank you all.</strong></p>
+
+        <p>
+          I'm sorry if my english is kinda shit, i'm french after all and i never really learned it..
+        </p>
+
+
+
+
+        <!-- small separation before the date block -->
+        <div class="meta">
+          19th December 2025 :
+        </div>
+
+        <p>
+          So after i stopped being sick, i chose to play.. mania! because thats also what my girlfriend does and i wanna be like her pepelaugh
+        </p>
+
+        <p>
+          And also cause i wanna prove that a girl with huge problems of hand correlation can succeed in mania! (or maybe taiko if i give up)
+        </p>
+
+        <p class="footnote">
+          (hardest pattern for my hands is the long note + the three notes on the side)
+        </p>
+
+      </div> <!-- .content -->
+    </article>
+  </div> <!-- .page -->
+</body>
+</html>
